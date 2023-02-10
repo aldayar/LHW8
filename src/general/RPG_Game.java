@@ -10,7 +10,7 @@ public class RPG_Game {
 
 
     public static void start() {
-        Boss boss = new Boss(2000,150);
+        Boss boss = new Boss(4000,200);
         Warrior warrior = new Warrior(270,15,"Воин1");
         Medic doc = new Medic(220,5,"Doc",15);
         Magic magic = new Magic(240,20,"magic");
@@ -18,7 +18,10 @@ public class RPG_Game {
         Medic assistant = new Medic(250,10,"assistant",5);
         Antman antman=new Antman(210,15,"antman");
         Hacker hacker=new Hacker(100,5,"hacker");
-        Hero[] heros ={warrior,doc,magic,bersek,assistant,antman,hacker};
+        Golem golem= new Golem(500,20,"golem");
+        Witcher witcher= new Witcher(2200,0,"WITCHER");
+
+        Hero[] heros ={warrior,doc,magic,bersek,assistant,antman,hacker,golem,witcher};
 
         printStatistic(boss,heros);
 
